@@ -84,7 +84,8 @@ hr{
 .file__card {
   color: white;
   text-align: center;
-  padding: 20px;
+  padding-left: 20px;
+  padding-top: 20px;
   cursor: pointer;
 }
 
@@ -139,6 +140,11 @@ hr{
   color: white;
 }
 
+.change_popup__card-flex{
+  display: flex;
+  flex-direction: column;
+}
+
 .change_popup span{
   padding: 30px;
 }
@@ -153,16 +159,14 @@ hr{
 }
 
 .popup_card__input-container{
-  position: absolute;
-  margin: 80px 40px;
-  width: 100%;
+  text-align: center;
 }
 
 .popup_card__input{
   width: 80%;
   padding-left: 2%;
   padding-top: 4%;
-  padding-bottom: 28%;
+  padding-bottom: 12em;
   background: none;
   border: 3px #242627 solid;
   border-radius: 10px;
@@ -170,16 +174,15 @@ hr{
 }
 
 .popup_card__submit{
-  position: absolute;
-  margin-left: 36%;
-  margin-top: 50%;
+  text-align: center;
+  padding: 10px;
 }
 
 .popup_card__submit button{
   border: 3px solid #242627;
   background: none;
   color: white;
-  width: 200%;
+  width: 20%;
   height: 30px;
   border-radius: 20px;
 }
@@ -191,7 +194,7 @@ hr{
 @media (max-width: 600px) {
   .left-sidebar{
     height: 400px;
-    width: 200px;
+    /* width: 200px; */
     margin: 20px;
     background-color: #2C2D31;
     flex: 1;
@@ -207,5 +210,63 @@ hr{
     border-radius: 1.625rem;
     padding: 0 3.5rem 0 1.5rem;
     font-size: 1rem;
+  }
+  .change_popup{
+    position: fixed;
+    background-color: #2C2D31;
+    border: 1px white solid;
+    border-radius: 10px;
+    width: 80%;
+    height: 50%;
+    top: 0;
+    margin: 12% 8%;
+    color: white;
+  }
+  
+  .change_popup__card-flex{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .change_popup span{
+    padding: 30px;
+  }
+  
+  .popup_card_file{
+    float: left;
+  }
+  
+  .popup_card__close{
+    float: right;
+    cursor: pointer;
+  }
+  
+  .popup_card__input-container{
+    text-align: center;
+  }
+  
+  .popup_card__input{
+    width: 80%;
+    padding-left: 2%;
+    padding-top: 4%;
+    padding-bottom: 12em;
+    background: none;
+    border: 3px #242627 solid;
+    border-radius: 10px;
+    color: white;
+  }
+  
+  .popup_card__submit{
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .popup_card__submit button{
+    border: 3px solid #242627;
+    background: none;
+    color: white;
+    width: 30%;
+    height: 30px;
+    border-radius: 20px;
   }
 }

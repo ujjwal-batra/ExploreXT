@@ -10,13 +10,17 @@ function Popup(props) {
     return (
         <div className="change_popup">
             <div className="change_popup__card">
-                <span className="popup_card_file">{props.selected}</span>
-                <span className="popup_card__close" onClick={() => onClickClose()}>X</span>
-                <div className="popup_card__input-container">
-                    <input className="popup_card__input" type="text"></input>
-                </div>
-                <div className="popup_card__submit">
-                    <button>Save file</button>
+                <div className="change_popup__card-flex">
+                    <div className="popup_card__heading">
+                        <span className="popup_card_file">{props.selected}</span>
+                        <span className="popup_card__close" onClick={() => onClickClose()}>X</span>
+                    </div>
+                    <div className="popup_card__input-container">
+                        <input className="popup_card__input" type="text"></input>
+                    </div>
+                    <div className="popup_card__submit">
+                        <button>Save file</button>
+                    </div>
                 </div>
             </div>
             
