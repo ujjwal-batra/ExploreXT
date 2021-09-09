@@ -1,0 +1,18 @@
+{
+    "Instruments" : {
+        "files" : ["White.txt", "Black.txt", "Wooden.txt"],
+        "Fender" : {
+            "Acoustic guitar" : {
+                "files" : ["White.txt", "Black.txt", "Wooden.txt", "White.txt", "Black.txt", "Wooden.txt"]
+            },
+            "Electric guitar" : {
+                "files" : ["White.txt", "Black.txt", "Wooden.txt", "White.txt", "Black.txt", "Wooden.txt", "White.txt", "Black.txt", "Wooden.txt"]
+            }
+        },
+        "Yamaha" : {
+        }
+    },
+    "Songs" : {
+
+    }
+}
