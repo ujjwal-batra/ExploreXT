@@ -3,6 +3,7 @@ function Popup(props) {
     const onClickClose = () => {
         props.setSelected("");
         props.setActive(false)
+        props.setLock("non-active")
     };
 
     if(props.isActive == false)

@@ -11,6 +11,7 @@ function Main(props) {
   const onClickFile = (e) => {
     setSelected(e);
     setActive(true)
+    props.setLock("active")
   };
 
   return (
@@ -40,7 +41,7 @@ function Main(props) {
         })}
       </div>
 
-      <PopUp isActive={active} selected={selected} setSelected={setSelected} setActive={setActive} />
+      <PopUp isActive={active} selected={selected} setSelected={setSelected} setActive={setActive} setLock={props.setLock} />
       
     </div>
   );

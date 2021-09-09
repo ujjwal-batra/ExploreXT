@@ -51,7 +51,7 @@ function Main(props) {
       </div>
       
       {/* <footer>
-        Lock
+        <button onClick={() => onClickLock()}>Lock</button>
       </footer> */}
     </div>
   );

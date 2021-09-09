@@ -129,6 +129,7 @@ hr{
 }
 
 .change_popup{
+  z-index: 100;
   position: fixed;
   background-color: #2C2D31;
   border: 1px white solid;
@@ -189,6 +190,15 @@ hr{
 
 .right-sidebar_header__dir{
   color: white;
+}
+
+.active{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background-color: black;
+  opacity: 0.5;
 }
 
 @media (max-width: 600px) {

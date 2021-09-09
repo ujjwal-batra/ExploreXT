@@ -8,11 +8,13 @@ function App() {
 
   const [files, setFiles] = React.useState([]);
   const [path, setPath] = React.useState([]);
+  const [lock, setLock] = React.useState("non-active");
 
   return (
     <div className="App">
-      <LeftSidebar setFiles={setFiles} setPath={setPath} />
-      <RightSidebar files={files} path={path}/>
+      <div className={lock}></div>
+      <LeftSidebar setFiles={setFiles} setPath={setPath}  />
+      <RightSidebar files={files} path={path} setLock={setLock}/>
     </div>
   );
 }
